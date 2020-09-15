@@ -1,14 +1,23 @@
 {
   "name": "wf_cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A dirty CLI to interface with wikifactory",
+  "main": "./lib/index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wf_cli": "./bin/index.js"
+  },
   "license": "MIT",
+  "preferGlobal": true,
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "configstore": "^5.0.1",
     "prompts": "^2.3.2",
     "puppeteer": "^5.2.1",
     "signale": "^1.4.0",
+    "yaml": "^1.10.0",
     "yargs": "^16.0.3"
   }
 }
